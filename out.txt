@@ -1,0 +1,4 @@
+There are no subnets for this ip,the one possible is 0.0.0.0/0
+There are no subnets for this ip,the one possible is 0.0.0.0/0
+237.92.40.1
+237.92.40.0/23
