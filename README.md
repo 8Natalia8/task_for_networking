@@ -1,9 +1,11 @@
 # task_for_networking
 ссылка на docker hub: https://hub.docker.com/repository/docker/5849/subnets_natali
 зарегистрироваться/залогиниться на данном ресурсе
-/* - разделитель для команд
+/* - разделитель для команд 
+```bash 
 1)В системе должен быть установлен докер, команды для установки конкретно в ubuntu (и почти во всех остальных дистрибутивах Linux): 
 /* sudo apt update && sudo apt upgrade 
+```
 /* sudo apt install apt-transport-https ca-certificates curl software-properties-common 
 /* curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - 
 /* sudo snap install docker 
