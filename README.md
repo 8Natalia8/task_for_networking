@@ -10,7 +10,11 @@ sudo apt install apt-transport-https ca-certificates curl software-properties-co
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - 
 sudo snap install docker 
 ```
-при введении команды docker должен отобразиться список возможных команд - тогда этот шаг завершен.
+при вводе команды: 
+```bash
+docker
+``` 
+должен отобразиться список возможных команд - тогда этот шаг завершен.
 ### 2) необходимо для входа в docker hub ввести команды:
 ```bash
 docker login 
@@ -20,7 +24,7 @@ docker login
 sudo docker pull 5849/subnets_natali:v1.0
 sudo docker run -v $(pwd):/data 5849/subnets_natali:v1.0 
 ```
-все должно отработать и должны появится два файла autogen.txt и out.txt.
+все должно отработать и должны появиться два файла autogen.txt и out.txt.
 
 
 1. входные данные - в файле in.txt в первой строке указывается кол-во для генерации валидных подсетей N и произвольный ipv4-адрес.
