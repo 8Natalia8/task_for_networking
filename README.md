@@ -14,7 +14,7 @@ your login/password
 3) в каталоге,где лежат файлы in.txt и main.py, ввести команды:
 docker pull 5849/subnets_natali:v1.0 - скачивание образа 
 sudo docker run -v $(pwd):/data 5849/subnets_natali:v1.0
-должно появится два файла autogen.txt и out.txt.
+все должно отработать и должны появится два файла autogen.txt и out.txt.
 
 
 1. входные данные - в файле in.txt в первой строке указывается кол-во для генерации валидных подсетей N и произвольный ipv4-адрес.
