@@ -11,7 +11,7 @@ sudo snap install docker
 docker login
 your login/password
 3) в каталоге,где лежат файлы in.txt и main.py, ввести команды:
-docker pull 5849/subnets_natali:v1.0 - скачивание образа 
+sudo docker pull 5849/subnets_natali:v1.0 - скачивание образа 
 sudo docker run -v $(pwd):/data 5849/subnets_natali:v1.0
 все должно отработать и должны появится два файла autogen.txt и out.txt.
 
