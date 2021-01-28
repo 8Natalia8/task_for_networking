@@ -1,5 +1,22 @@
 # task_for_networking
 ссылка на docker hub: https://hub.docker.com/repository/docker/5849/subnets_natali
+зарегистрироваться/залогиниться на данном ресурсе
+вставить ее в командную строку и вместо tagname написать v1.0 (docker pull 5849/subnets_natali:v1.0)
+1)В системе должен быть установлен докер, команды для установки конкретно ubuntu (и почти во всех остальных дистрибутивах Linux): 
+sudo apt update && sudo apt upgrade
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - 
+sudo snap install docker
+при введении команды docker должен отобразиться список возможных команд - тогда этот шаг завершен.
+2) необходимо для входа в docker hub ввести команды:
+docker login
+your login/password
+3) в каталоге,где лежат файлы in.txt и main.py, ввести команды:
+docker pull 5849/subnets_natali:v1.0 - скачивание образа 
+sudo docker run -v $(pwd):/data 5849/subnets_natali:v1.0
+должно появится два файла autogen.txt и out.txt.
+
+
 1. входные данные - в файле in.txt в первой строке указывается кол-во для генерации валидных подсетей N и произвольный ipv4-адрес.
 2. выходные данные - в файле autogen.txt находятся сгенерированные подсети(в данном репозитории в файле находится результат неоднократного запуска программы,
 поэтому кол-во подсетей превышает число N), в файле out.txt находится результат соотвествия ipv4-адреса одной или нескольким сгенерированным подсетям, из них выбирается "лучший маршрут", который записывается в данный выходной файл.
