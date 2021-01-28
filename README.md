@@ -19,7 +19,7 @@ docker
 ```bash
 docker login 
 ```
-### 3) в каталоге,где лежат файлы in.txt и main.py (скачать заново,я подправила одну строку), ввести команды:
+### 3) в каталоге, где лежат файлы in.txt и main.py (скачать заново, я подправила одну строку), ввести команды:
 ```bash
 sudo docker pull 5849/subnets_natali:v1.0
 sudo docker run -v $(pwd):/data 5849/subnets_natali:v1.0 
