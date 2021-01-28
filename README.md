@@ -3,7 +3,7 @@ ____
 ссылка на docker hub: https://hub.docker.com/repository/docker/5849/subnets_natali
 зарегистрироваться/залогиниться на данном ресурсе
 
-1)В системе должен быть установлен докер, команды для установки конкретно в ubuntu (и почти во всех остальных дистрибутивах Linux): 
+###1)В системе должен быть установлен докер, команды для установки конкретно в ubuntu (и почти во всех остальных дистрибутивах Linux): 
 ```bash
 sudo apt update && sudo apt upgrade 
 sudo apt install apt-transport-https ca-certificates curl software-properties-common 
@@ -11,12 +11,11 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo snap install docker 
 ```
 при введении команды docker должен отобразиться список возможных команд - тогда этот шаг завершен.
-2) необходимо для входа в docker hub ввести команды:
+###2) необходимо для входа в docker hub ввести команды:
 ```bash
 docker login 
 ```
-your login/password
-3) в каталоге,где лежат файлы in.txt и main.py (скачать заново,я подправила одну строку), ввести команды:
+###3) в каталоге,где лежат файлы in.txt и main.py (скачать заново,я подправила одну строку), ввести команды:
 ```bash
 sudo docker pull 5849/subnets_natali:v1.0
 sudo docker run -v $(pwd):/data 5849/subnets_natali:v1.0 
