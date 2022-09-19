@@ -1,7 +1,7 @@
 # task_for_networking
 ____
 ссылка на docker hub: https://hub.docker.com/repository/docker/5849/subnets_natali
-зарегистрироваться/залогиниться на данном ресурсе
+
 
 ### 1)В системе должен быть установлен докер, команды для установки конкретно в ubuntu (и почти во всех остальных дистрибутивах Linux): 
 ```bash
